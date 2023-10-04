@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+
+    </header>
+    
+    <main>
+        <!-- Form Container -->
+        <section class="form__container">
+                <!-- star form -->
+            <form action="" method="get" id="form_1">
+                <fieldset>
+                    <!-- Local store and address -->
+                    <legend>SELECT YOUR LOCAL STORE</legend>
+                    <br>
+                    <Select class="local" width="30px" for="store">
+                        <option id="store" name="store" value="640 parliament st - Downtown" required="required">640 parliament st - Downtown</option>
+                        <option id="store" name="store" value="4390 Bloor st - Downtown">4390 Bloor st - Downtown</option>
+                        <option id="store" name="store" value="140 arkine st - North York">4140 arkine st - North York</option>
+
+                    </Select>
+
+                        <!-- Delivery or to go -->
+                    <ul class="inLine">
+                        <li><input type="checkbox" name="" id="" >Delivery</li>
+                        <li><input type="checkbox" name="" id="">Carry out</li>
+                    </ul>
+
+                </fieldset>
+                <br>
+                <!-- Container w/Names -->
+                <section class="form_names">
+                    <div>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="John"><br>
+                    </div>
+                    <div>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname" placeholder="Doe"><br>
+                    </div>
+                    
+                </section>
+                <br>
+                <!-- Container with phone and email -->
+                <section class="form_names">
+                    <div>
+                        <label for="pnumber">Phone Number:</label><br>
+                        <input type="number" id="pnumber" name="pnumber" placeholder="4376654856" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="johndoe@gmail.com"><br>
+                    </div>
+                </section>
+                <br>
+                            <!-- Type of pizza  -->
+                    <fieldset>
+                        <legend>Your Pizza</legend>
+                            <label for="size">Choose your size:</label>
+                            <select name="size" id="size">
+                                <option value="small">small</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Familiar">Familiar</option>
+                                <option value="X-large">X-large</option>
+                            </select>
+                            <br>
+                            <div class="form_names">
+                                <label for="dough">Choose your Shape:</label>
+                                <ul class="inLine">
+                                    <li><input type="radio" name="dough" id="dough" >Circle</li>
+                                    
+                                    <li><input type="radio" name="dough" id="dough">Square</li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div class="form_names">
+                                <label for="pizza">types of Pizzas:</label>
+                                <select name="pizza" id="pizza">
+                                    <optgroup label="Veggie Pizza">
+                                        <option value="flour">white     flour</option>
+                                        <option value="wheat">wheat     flour</option>
+                                    </optgroup>
+                                    <optgroup label="Pepperoni">
+                                        <option value="flour">white flour</option>
+                                        <option value="wheat">wheat flour</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <br>
+
+                            <!-- Adds on toppings -->
+                                <fieldset id="addOns">
+                                    <legend>Topping(s)</legend>
+                                    <input type="checkbox" id="pepperoni" name="addOns" value="Pepperoni" />
+                                    <label for="pepperoni">Pepperoni</label>
+                                    <input type="checkbox" id="sauces" name="addOns" value="sauces" />
+                                    <label for="sauces">sauces</label>
+                                    <input type="checkbox" id="peppers" name="addOns" value="Red Peppers" />
+                                    <label for="peppers">Red Peppers</label>
+                                    <input type="checkbox" id="onion" name="addOns" value="Onions" />
+                                    <label for="onion">Onions</label>
+                                    <input type="checkbox" id="chesse" name="addOns" value="Extra Cheese" />
+                                    <label for="chesse">Extra Cheese</label>
+                                    <br>
+                                    <br>
+                                    <label for="instructions">Special Instructions</label>
+                                    <br>
+                                    <textarea id="instructions" name="instructions" rows="5" cols="43"placeholder="dont be late please"></textarea>
+                                </fieldset>
+
+                                <!-- Buttons submit and reset -->
+                                <div id="button">
+                                    <input id="sendButton" class="button_form send" type="submit" value="Submit">
+                                    <input class="button_form reset" type="reset" value="Reset">
+                                    
+                                </div>
+                    </fieldset>
+
+            </form>
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+    </footer>
+
+    
+</body>
+</html>
